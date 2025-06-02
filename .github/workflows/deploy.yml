@@ -34,9 +34,5 @@ jobs:
         run: terraform init
         
       - name: Terraform Apply 
-        run: terraform apply 
-          
-      - name: Terraform  (Create EC2)
-        run: terraform destroy -auto-approve
-
+        run: terraform apply -auto-approve
       
