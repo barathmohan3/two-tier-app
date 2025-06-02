@@ -1,4 +1,3 @@
-
 name: Provision Infra using Terraform via EC2
 on:
   workflow_dispatch:
@@ -15,8 +14,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          ref: users  # Ensure the default branch is checked out
  
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
