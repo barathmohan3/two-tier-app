@@ -41,7 +41,7 @@ jobs:
           echo "Using custom rules from .tflint.hcl"
           tflint --config=./.tflint.hcl
         continue-on-error: true
-        
+
       - name: Terraform Destroy 
         run: terraform destroy -auto-approve
       
