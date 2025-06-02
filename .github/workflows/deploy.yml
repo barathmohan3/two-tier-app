@@ -36,7 +36,7 @@ jobs:
       - name: Terraform validate 
         run: terraform validate 
           
-      - name: Terraform Apply (Create EC2)
-        run: terraform apply -auto-approve
+      - name: Terraform Destroy (Create EC2)
+        run: terraform destroy -auto-approve
 
       
