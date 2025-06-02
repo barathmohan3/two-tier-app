@@ -42,6 +42,6 @@ jobs:
           tflint --config=./.tflint.hcl
         continue-on-error: true
 
-      - name: Terraform Destroy 
-        run: terraform destroy -auto-approve
+      - name: Terraform Apply 
+        run: terraform apply -auto-approve
       
