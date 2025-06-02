@@ -29,7 +29,6 @@ jobs:
       - name: Terraform formtat (Create EC2)
         run: terraform fmt
         
-
       - name: Terraform init (Create EC2)
         run: terraform init
         
