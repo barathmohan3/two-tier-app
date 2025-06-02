@@ -33,10 +33,10 @@ jobs:
       - name: Terraform init (Create EC2)
         run: terraform init
         
-      - name: Terraform validate 
-        run: terraform validate 
+      - name: Terraform Apply 
+        run: terraform apply 
           
-      - name: Terraform Destroy (Create EC2)
+      - name: Terraform  (Create EC2)
         run: terraform destroy -auto-approve
 
       
